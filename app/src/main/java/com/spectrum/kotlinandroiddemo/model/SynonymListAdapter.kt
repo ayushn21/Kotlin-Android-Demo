@@ -1,4 +1,4 @@
-package com.spectrum.kotlinandroiddemo.com.spectrum.kotlinandroiddemo.model
+package com.spectrum.kotlinandroiddemo.model
 
 import android.content.Context
 import android.view.View
