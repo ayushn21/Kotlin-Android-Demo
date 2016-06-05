@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.spectrum.kotlinandroiddemo.MainActivity">
 
     <TextView
-        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/synonym_heading"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/synonymInputWordTextField"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:hint="@string/synonym_text_field_hint"/>
+
+    <Button
+        android:id="@+id/synonymSubmitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/synonym_submit_button_text"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_marginTop="20dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/synonymListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

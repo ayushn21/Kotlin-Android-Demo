@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Kotlin Android Demo</string>
+    <string name="synonym_heading">Synonym Generator</string>
+    <string name="synonym_text_field_hint">Enter a word here:</string>
+    <string name="synonym_submit_button_text">Submit</string>
 </resources>
