@@ -1,7 +1,5 @@
 package com.spectrum.kotlinandroiddemo.services
 
-import com.google.gson.Gson
-import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import org.jetbrains.anko.async
 import org.jetbrains.anko.uiThread
